@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/output.css">
 </head>
 <body>
-    <h1 class="text-3xl font-bold">Hey</h1>
+    <h1 class="text-3xl font-comic">Hey</h1>
     <a href="../index.php">yey</a>
 </body>
 </html>
