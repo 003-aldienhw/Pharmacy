@@ -4,6 +4,7 @@ require_once __DIR__."/../../connectdb.php";
 
 $sql = "CREATE TABLE IF NOT EXISTS patient (
     id_pasien INT AUTO_INCREMENT PRIMARY KEY,
+    id_account INT NOT NULL UNIQUE,
     no_rekam_medis VARCHAR(20) UNIQUE NOT NULL,
     nama_lengkap VARCHAR(100) NOT NULL,
     nik VARCHAR(16) UNIQUE,
