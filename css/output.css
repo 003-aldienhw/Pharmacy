@@ -8,13 +8,14 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --spacing: 0.25rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
-    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-changa: "Changa One", sans-serif;
     --font-comic: "Comic Relief", sans-serif;
+    --color-dark-blue: #023f5c;
   }
 }
 @layer base {
@@ -166,8 +167,17 @@
   }
 }
 @layer utilities {
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
+  }
+  .h-500 {
+    height: calc(var(--spacing) * 500);
+  }
+  .w-full {
+    width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -175,9 +185,24 @@
   .resize {
     resize: both;
   }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .bg-\[\#156082\] {
+    background-color: #156082;
+  }
+  .bg-dark-blue {
+    background-color: var(--color-dark-blue);
   }
   .font-changa {
     font-family: var(--font-changa);
@@ -189,9 +214,14 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
+  .text-\[\#023f5c\] {
+    color: #023f5c;
+  }
+  .text-\[\#\] {
+    color: #;
+  }
+  .text-dark-blue {
+    color: var(--color-dark-blue);
   }
   .underline {
     text-decoration-line: underline;
@@ -224,10 +254,6 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -237,7 +263,6 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
-      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
