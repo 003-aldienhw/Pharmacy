@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./css/output.css">
 </head>
 <body>
-    <div class="w-full h-500 flex justify-center bg-[#156082]">
-        <h1 class="font-changa text-3xl text-[#023f5c]">Test</h1>
+    <div class="w-full h-[500px] flex justify-center bg-blue-500">
+        <h1 class="text-3xl text-white">Test</h1>
     </div>
 </body>
 </html>

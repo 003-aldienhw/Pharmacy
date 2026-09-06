@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../";
 
 @font-face {
     font-family: 'Changa One';
@@ -15,7 +16,7 @@
 }
 
 @font-face {
-    font-family: 'Changa One';
+    font-family: 'Comic Relief';
     src: url('./fonts/comic-relief-latin-700-normal.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
@@ -24,5 +25,4 @@
 @theme {
     --font-changa: "Changa One", sans-serif;
     --font-comic: "Comic Relief", sans-serif;
-    --color-dark-blue: #023f5c;
 }
