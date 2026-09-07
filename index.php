@@ -7,6 +7,6 @@
     <link rel="stylesheet" href="./css/output.css?v=<?= filemtime('./css/output.css') ?>">
 </head>
 <body>
-    <?php include './components/navbar.php' ?>
+    <?php include './Views/register.php' ?>
 </body>
 </html>
