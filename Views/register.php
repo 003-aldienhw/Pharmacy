@@ -1,5 +1,6 @@
 <?php 
     $errorMessage = "Hanya menerima angka!";
+    $phoneNumErrorMessage = "Hanya menerima angka!";
     $inputBaseClasses = "w-70 p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none transition-colors duration-200";
     $inputErrorClasses = "border-red-800 bg-red-10";
     $phoneErrorMessage = "Masukkan No HP yang valid!";
@@ -33,20 +34,23 @@
             <h1 class="text-md">Alamat Lengkap</h1>
             <input class="w-70 p-1 bg-gray-300 outline-none border-2 border-black font-comic font-bold rounded-lg" type="text"/>
             <h1 class="text-md">No HP</h1>
+            <div id="phoneNum" class="hidden font-comic font-bold text-sm text-red-800 mb-1">
+                <?php echo htmlspecialchars($phoneNumErrorMessage); ?>
+            </div>
             <div id="phoneError" class="hidden font-comic font-bold text-sm text-red-800 mb-1">
                 <?php echo htmlspecialchars($phoneErrorMessage); ?>
             </div>
-            <input class="<?php echo $phoneInputBase ?>" type="tel" id="phoneInput" placeholder="0821-9273-2377" inputmode="tel"/>
+            <input class="<?php echo $phoneInputBase ?>" type="tel" id="phoneInput" placeholder="0812-3456-7890" inputmode="tel"/>
         </div>
     </div>
 </div>
 <script>
     const input = document.getElementById('numberInput');
     const errorMessage = document.getElementById('errorMessage');
+    const phoneNum = document.getElementById('phoneNum');
     const phoneInput = document.getElementById('phoneInput');
     const phoneError = document.getElementById('phoneError');
     const pErrorClasses = <?php echo json_encode(explode(' ', $phoneInputError)); ?>;
-
     const errorClasses = <?php echo json_encode(explode(' ', $inputErrorClasses)); ?>;
 
     input.addEventListener('input', function() {
@@ -68,10 +72,23 @@
     });
 
     phoneInput.addEventListener('input', function() {
+        const hasInvalidChar = /[^0-9]/.test(this.value);
         let rawValue = this.value.replace(/\D/g, '');
     
         if (rawValue.length > 12) {
             rawValue = rawValue.substring(0, 12);
+        }
+
+        if (hasInvalidChar) {
+            phoneNum.classList.remove('hidden');
+            phoneNum.classList.add('block');
+      
+            phoneInput.classList.remove('border-black');
+            phoneInput.classList.add(...pErrorClasses);
+      
+        } else {
+            phoneNum.classList.remove('block');
+            phoneNum.classList.add('hidden');
         }
     
         let formattedValue = '';
@@ -95,8 +112,11 @@
         } else {
             phoneError.classList.remove('block');
             phoneError.classList.add('hidden');
+        }
+
+        if (!hasInvalidChar && (rawValue.length === 0 || rawValue.length >= 10)) {
             phoneInput.classList.remove(...pErrorClasses);
-            phoneInput.classList.add('border-black');
+            phoneInput.classList.add('border-black')
         }
     });
 </script>
