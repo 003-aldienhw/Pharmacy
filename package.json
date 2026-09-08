@@ -1,8 +1,18 @@
 {
-  "dependencies": {
-    "@tailwindcss/cli": "^4.3.3"
+  "name": "pharmacy",
+  "version": "1.0.0",
+  "description": "CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure. More information can be found at the [official site](https://codeigniter.com).",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
   },
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./css/input.css -o ./css/output.css --watch"
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "dev": "npx @tailwindcss/cli -i ./app/Views/css/input.css -o ./public/css/app.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3"
   }
 }
