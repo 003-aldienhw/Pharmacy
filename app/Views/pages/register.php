@@ -38,13 +38,9 @@
             </div>
             <input class="<?php echo $phoneInputBase ?>" type="tel" id="phoneInput" placeholder="0821-9273-2377" inputmode="tel"/>
         </div>
-<<<<<<< HEAD:Views/register.php
         <div class="flex justify-center">
             <button class="mt-10 p-1 w-30 text-xl bg-[#14b6ff] cursor-pointer rounded-lg">Submit</button>
         </div>
-=======
-        <button  class="cursor-pointer">register</button>
->>>>>>> 5adbfc7a6e4f5ffa15cf63e023fc7b19060d75cb:app/Views/pages/register.php
     </div>
 </div>
 <script>
@@ -75,14 +71,10 @@
     });
 
     phoneInput.addEventListener('input', function() {
-<<<<<<< HEAD:Views/register.php
         let value = this.value;
         let rawValue = value.replace(/-/g,'');
         const hasInvalidChar = /[^0-9]/.test(rawValue);
         rawValue = this.value.replace(/\D/g, '');
-=======
-        let rawValue = this.value.replace(/\D/g, '');
->>>>>>> 5adbfc7a6e4f5ffa15cf63e023fc7b19060d75cb:app/Views/pages/register.php
     
         if (rawValue.length > 12) {
             rawValue = rawValue.substring(0, 12);

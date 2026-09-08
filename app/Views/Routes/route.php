@@ -12,3 +12,8 @@ $routes->get('/', fn() => view('main', [
     'page' => 'pages/home',
     'title' => 'Home'
 ]));
+
+$routes->get('/login', fn() => view('main', [
+    'page' => 'pages/login',
+    'title' => 'Login'
+]));
