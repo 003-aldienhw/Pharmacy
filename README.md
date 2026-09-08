@@ -32,8 +32,10 @@ After copying `env` to `.env`, run the following command to
 generate the application key and run the database migrations:
 
 ```
+composer install
 php spark key:generate
 php spark migrate
+php spark shield:setup
 ```
 
 ## Important Change with index.php
