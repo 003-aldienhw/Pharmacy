@@ -28,6 +28,14 @@ to your `app` folder. The affected files can be copied or merged from
 Copy `env` to `.env` and tailor for your app, specifically the baseURL
 and any database settings.
 
+After copying `env` to `.env`, run the following command to
+generate the application key and run the database migrations:
+
+```
+php spark key:generate
+php spark migrate
+```
+
 ## Important Change with index.php
 
 `index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
