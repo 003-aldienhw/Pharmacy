@@ -9,6 +9,6 @@ $routes->get('/register', fn() => view('main', [
 ]));
 
 $routes->get('/', fn() => view('main', [
-    'page' => 'pages/home',
-    'title' => 'Home'
+    'page' => 'pages/checking',
+    'title' => 'Cek data'
 ]));

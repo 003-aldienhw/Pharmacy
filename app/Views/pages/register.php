@@ -7,13 +7,13 @@
     $phoneInputBase = "w-70 p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none transition-colors duration-200";
     $phoneInputError = "border-red-800 bg-red-10";
 ?>
-<div class="flex justify-center items-center w-full h-screen font-changa bg-[#022e42]">
+<div class="flex p-10 justify-center items-center w-full h-full font-changa bg-[#022e42]">
     <div class="flex flex-col p-10 bg-[#156082] rounded-lg shadow-xl">
         <h1 class="text-3xl text-center">Daftar Pasien</h1>
         <div class="flex flex-col gap-3 mt-10">
             <h1 class="text-md">Nama lengkap</h1>
             <input class="w-70 p-1 bg-gray-300 outline-none border-2 border-black font-comic font-bold rounded-lg" type="text"/>
-            <h1 class="text-md">NIK KTP</h1>
+            <h1 class="text-md">NIK</h1>
             <div id="errorMessage" class="hidden font-comic font-bold text-sm text-red-800 mb-1">
                 <?php echo htmlspecialchars($errorMessage); ?>
             </div>
@@ -43,7 +43,11 @@
             <input class="<?php echo $phoneInputBase ?>" type="tel" id="phoneInput" placeholder="0812-3456-7890" inputmode="tel"/>
         </div>
         <div class="flex justify-center">
-            <button class="mt-10 p-1 w-30 text-xl bg-blue-500 cursor-pointer rounded-lg">Submit</button>
+            <button class="mt-10 p-1 w-30 text-xl text-white bg-[#011359] cursor-pointer rounded-lg">Submit</button>
+        </div>
+        <div class="flex flex-col mt-5 justify-center items-center">
+            <h1>Sudah Terdaftar?</h1>
+            <a href="/" class="text-[#011359]">Cek Data Pasien</a>
         </div>
     </div>
 </div>
