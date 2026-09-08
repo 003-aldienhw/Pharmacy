@@ -42,6 +42,9 @@
             </div>
             <input class="<?php echo $phoneInputBase ?>" type="tel" id="phoneInput" placeholder="0812-3456-7890" inputmode="tel"/>
         </div>
+        <div class="flex justify-center">
+            <button class="mt-10 p-1 w-30 text-xl bg-[#14b6ff] cursor-pointer rounded-lg">Submit</button>
+        </div>
     </div>
 </div>
 <script>
@@ -72,8 +75,10 @@
     });
 
     phoneInput.addEventListener('input', function() {
-        const hasInvalidChar = /[^0-9]/.test(this.value);
-        let rawValue = this.value.replace(/\D/g, '');
+        let value = this.value;
+        let rawValue = value.replace(/-/g,'');
+        const hasInvalidChar = /[^0-9]/.test(rawValue);
+        rawValue = this.value.replace(/\D/g, '');
     
         if (rawValue.length > 12) {
             rawValue = rawValue.substring(0, 12);
