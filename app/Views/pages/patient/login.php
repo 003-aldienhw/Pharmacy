@@ -5,16 +5,20 @@
 ?>
 <div class="flex justify-center items-center w-full h-screen font-changa bg-[#022e42]">
     <div class="flex flex-col p-10 bg-[#156082] rounded-lg shadow-xl">
-        <h1 class="text-3xl text-center">Cek Data Pasien</h1>
+        <h1 class="text-3xl text-center">Login Pasien</h1>
         <div class="flex flex-col gap-3 mt-10">
             <h1 class="text-md">NIK / No. RM</h1>
             <div id="errorMessage" class="hidden font-comic font-bold text-sm text-red-800 mb-1">
                 <?php echo htmlspecialchars($errorMessage); ?>
             </div>
             <input class="<?php echo $inputBaseClasses ?>" type="text" id="numberInput" inputmode="numeric"/>
+            <h1 class="text-md">Nama</h1>
+            <input class="<?php echo $inputBaseClasses ?>" type="text" />
+            <h1 class="text-md">Password</h1>
+            <input class="<?php echo $inputBaseClasses ?>" type="text" />
         </div>
         <div class="flex justify-center">
-            <button class="mt-10 p-1 w-30 text-xl text-white bg-[#011359] cursor-pointer rounded-lg">Cek Data</button>
+            <a href="/"><button class="mt-10 p-1 w-30 text-xl text-white bg-[#011359] cursor-pointer rounded-lg">Login</button></a>
         </div>
         <div class="flex flex-col mt-5 justify-center items-center">
             <h1>Belum Terdaftar?</h1>
