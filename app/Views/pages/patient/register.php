@@ -47,7 +47,7 @@
         </div>
         <div class="flex flex-col mt-5 justify-center items-center">
             <h1>Sudah Terdaftar?</h1>
-            <a href="/" class="text-[#011359]">Cek Data Pasien</a>
+            <a href="/login" class="text-[#011359]">Login</a>
         </div>
     </div>
 </div>

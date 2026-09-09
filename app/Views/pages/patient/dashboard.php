@@ -9,7 +9,7 @@
     </div>
     <div class="flex flex-col w-80 items-center p-10 bg-[#156082] rounded-lg shadow-xl">
         <h1 class="text-xl">Pendaftaran saya</h1>
-        <a href="/pendaftaran-saya"><button class="mt-5 p-1 w-25 font-comic font-bold text-md text-white bg-[#011359] cursor-pointer rounded-lg">Riwayat</button></a>
+        <a href="/pendaftaran-saya"><button class="mt-5 p-1 w-25 font-comic font-bold text-md text-white bg-[#011359] cursor-pointer rounded-lg">Lihat</button></a>
     </div>
     <div class="flex flex-col w-80 items-center p-10 bg-[#156082] rounded-lg shadow-xl">
         <h1 class="text-xl">Profil saya</h1>
