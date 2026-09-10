@@ -6,11 +6,12 @@
         </div>
         <div class="w-25"></div>
     </div>
-    <div class="flex flex-col w-120 items-center p-10 bg-[#156082] rounded-lg shadow-xl">
-       <h1>Poli -</h1>
-       <h1>Poli -</h1>
-       <h1>Poli -</h1>
-       <h1>Poli -</h1>
-       <h1>Poli -</h1>
+    <div class="flex flex-col w-220 items-center p-10 bg-[#156082] rounded-lg shadow-xl">
+        <div class="flex justify-between font-bold font-comic">
+            <h1>Pemeriksaan : 1jt</h1>
+            <h1>Obat : 1jt</h1>
+            <h1>Total : 10jt</h1>
+            <h1>Status : Belum bayar</h1>
+        </div> 
     </div>
 </div>
