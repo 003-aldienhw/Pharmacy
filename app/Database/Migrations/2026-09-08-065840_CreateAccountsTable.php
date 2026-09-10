@@ -36,6 +36,10 @@ class CreateAccountsTable extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => 20,
             ],
+            'data' => [
+                'type' => 'JSON',
+                'null' => true
+            ]
         ]);
 
         $this->forge->addKey('id', true);
