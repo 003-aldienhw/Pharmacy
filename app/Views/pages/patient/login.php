@@ -15,7 +15,7 @@
             <h1 class="text-md">Nama</h1>
             <input class="<?php echo $inputBaseClasses ?>" type="text" />
             <h1 class="text-md">Password</h1>
-            <input class="<?php echo $inputBaseClasses ?>" type="text" />
+            <input class="<?php echo $inputBaseClasses ?>" type="password" />
         </div>
         <div class="flex justify-center">
             <a href="/"><button class="mt-10 p-1 w-30 text-xl text-white bg-[#011359] cursor-pointer rounded-lg">Login</button></a>
