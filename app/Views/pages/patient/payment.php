@@ -6,12 +6,31 @@
         </div>
         <div class="w-25"></div>
     </div>
-    <div class="flex flex-col w-220 items-center p-10 bg-[#156082] rounded-lg shadow-xl">
-        <div class="flex justify-between font-bold font-comic">
-            <h1>Pemeriksaan : 1jt</h1>
-            <h1>Obat : 1jt</h1>
-            <h1>Total : 10jt</h1>
-            <h1>Status : Belum bayar</h1>
-        </div> 
+    <div class="flex flex-col w-120 items-center p-10 bg-[#156082] rounded-lg shadow-xl">
+        <div class="flex flex-col w-full gap-5">
+            <div class="flex justify-between items-center">
+                <h1 class="w-full text-center text-lg">Dokter</h1>
+                <h1 class="w-full text-center font-comic font-bold">Dr. Ahmad</h1>
+            </div>
+            <div class="flex justify-between items-center">
+                <h1 class="w-full text-center text-lg">Pemeriksaan</h1>
+                <h1 class="w-full text-center font-comic font-bold">1jt</h1>
+            </div>
+            <div class="flex justify-between items-center">
+                <h1 class="w-full text-center text-lg">Obat</h1>
+                <h1 class="w-full text-center font-comic font-bold">10jt</h1>
+            </div>
+            <div class="flex justify-between items-center">
+                <h1 class="w-full text-center text-lg">Total</h1>
+                <h1 class="w-full text-center font-comic font-bold">2t</h1>
+            </div>
+            <div class="flex justify-between items-center">
+                <h1 class="w-full text-center text-lg">Status</h1>
+                <h1 class="w-full text-center font-comic font-bold">Belum dibayar</h1>
+            </div>
+            <div class="flex justify-center">
+                <button class="mt-5 p-1 w-30 text-xl text-white bg-[#011359] cursor-pointer rounded-lg">Bayar</button>
+            </div>
+        </div>
     </div>
 </div>
