@@ -7,7 +7,7 @@
         <a href="/pendaftaran-saya"><button class="p-1 w-25 font-comic font-bold text-md text-white bg-[#156082] cursor-pointer rounded-lg">Riwayat</button></a>
     </div>
     <div class="flex flex-col w-120 items-center p-10 bg-[#156082] rounded-lg shadow-xl">
-        <form action="poli-daftar" method="get" class="flex flex-col w-full gap-5">
+        <div class="flex flex-col w-full gap-5">
             <div class="flex justify-between">
                 <h1 class="w-full text-center text-lg">Poli</h1>
                 <h1 class="w-full text-center text-lg">Dokter</h1>
@@ -28,6 +28,6 @@
                 <h1 class="w-full text-center">Dr. Asep</h1>
                 <h1 class="w-full text-center">Selasa-Rabu</h1>
             </div></a>
-        </form>
+        </div>
     </div>
 </div>
