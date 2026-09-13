@@ -55,6 +55,10 @@
                 <h1 class="w-full text-center text-lg">Jadwal</h1>
                 <h1 class="w-full text-center font-comic font-bold"><?php echo $jadwal ?></h1>
             </div>
+            <div class="flex justify-between items-center">
+                <h1 class="w-full text-center text-lg">Keluhan</h1>
+                <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
+            </div>
             <div class="flex justify-center">
                 <button class="mt-5 p-1 w-30 text-xl text-white bg-[#011359] cursor-pointer rounded-lg">Daftar</button>
             </div>

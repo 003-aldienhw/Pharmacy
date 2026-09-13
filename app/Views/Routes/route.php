@@ -8,12 +8,12 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->get('/register', fn() => view('main', [
     'page' => 'pages/patient/register',
-    'title' => 'Registration'
+    'title' => 'Registrasi Pasien'
 ]));
 
 $routes->get('/login', fn() => view('main', [
     'page' => 'pages/patient/login',
-    'title' => 'Login'
+    'title' => 'Login Pasien'
 ]));
 
 $routes->get('/poli', fn() => view('main', [
@@ -49,4 +49,26 @@ $routes->get('/pendaftaran-saya', fn() => view('main', [
 $routes->get('/', fn() => view('main', [
     'page' => 'pages/patient/dashboard',
     'title' => 'Dashboard'
+]));
+
+/** Doctor */
+
+$routes->get('/dokter/login', fn() => view('main', [
+    'page' => 'pages/doctor/login',
+    'title' => 'Login Dokter'
+]));
+
+$routes->get('/dokter/dashboard', fn() => view('main', [
+    'page' => 'pages/doctor/dashboard',
+    'title' => 'Dashboard Dokter'
+]));
+
+$routes->get('/dokter/antrian', fn() => view('main', [
+    'page' => 'pages/doctor/queue',
+    'title' => 'Antrian Pasien'
+]));
+
+$routes->get('/dokter/sudah-diperiksa', fn() => view('main', [
+    'page' => 'pages/doctor/patient_history',
+    'title' => 'Riwayat semua Pasien'
 ]));
