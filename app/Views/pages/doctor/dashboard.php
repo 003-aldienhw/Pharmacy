@@ -2,13 +2,14 @@
     $nama = "Tono";
     $pasien_menunggu = 100;
     $sudah_diperiksa = 1;
+    $total_pasien = -1;
 ?>
 <div class="flex flex-col gap-10 p-10 justify-center items-center w-full h-screen font-changa bg-[#022e42]">
     <div class="flex flex-col items-center p-5 bg-[#156082] rounded-lg shadow-xl">
         <h1 class="text-3xl text-center text-shadow-sm text-shadow-white">Selamat datang, Dr. <?php echo $nama ?>!</h1>
     </div>
     <div class="flex flex-col w-120 items-center w-80 p-5 bg-[#156082] rounded-lg shadow-xl">
-        <h1 class="text-2xl text-center">Pilih Tujuanmu</h1>
+        <h1 class="text-2xl text-center">Total Pasien yang ditangani : <?php echo $total_pasien ?></h1>
     </div>
     <div class="flex flex-col w-120 gap-5">
         <div class="flex justify-between">
