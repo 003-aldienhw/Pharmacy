@@ -52,6 +52,13 @@ class AuthFilter implements FilterInterface
                     'required' => 'Username required.',
                 ],
             ],
+            
+            'role' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Role required'
+                ]
+            ]
         ]);
 
         if (!$validation->run($data)) {
