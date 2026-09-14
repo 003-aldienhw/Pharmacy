@@ -3,6 +3,7 @@
 namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
+use CodeIgniter\Database\RawSql;
 
 class CreateAccountsTable extends Migration
 {
@@ -35,6 +36,14 @@ class CreateAccountsTable extends Migration
             'role' => [
                 'type'       => 'VARCHAR',
                 'constraint' => 20,
+            ],
+            'is_admin' => [
+                'type'       => 'BOOLEAN',
+                'default'    => false
+            ],
+            'created_at' => [
+                'type'    => 'DATETIME',
+                'default' => new RawSql('CURRENT_TIMESTAMP'),
             ],
             'data' => [
                 'type' => 'JSON',
