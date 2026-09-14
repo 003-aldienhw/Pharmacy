@@ -6,7 +6,7 @@ use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class AuthFilter implements FilterInterface
+class RegistrationFilter implements FilterInterface
 {
     /**
      * Do whatever processing this filter needs to do.
@@ -52,6 +52,13 @@ class AuthFilter implements FilterInterface
                     'required' => 'Username required.',
                 ],
             ],
+            
+            'role' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Role required'
+                ]
+            ]
         ]);
 
         if (!$validation->run($data)) {
