@@ -2,6 +2,7 @@
 
 namespace Config;
 
+use App\Models\AccountModel;
 use CodeIgniter\Config\BaseService;
 use App\Libraries\AuthManagers;
 /**
@@ -37,6 +38,6 @@ class Services extends BaseService
             return static::getSharedInstance('authentication');
         }
 
-        return new AuthManagers();
+        return new AuthManagers(new AccountModel());
     }
 }
