@@ -2,9 +2,11 @@
 
 namespace Config;
 
+use App\Libraries\UserManagers;
 use App\Models\AccountModel;
 use CodeIgniter\Config\BaseService;
 use App\Libraries\AuthManagers;
+use SebastianBergmann\Timer\NoActiveTimerException;
 /**
  * Services Configuration file.
  *
@@ -20,18 +22,6 @@ use App\Libraries\AuthManagers;
  */
 class Services extends BaseService
 {
-    /*
-     * public static function example($getShared = true)
-     * {
-     *     if ($getShared) {
-     *         return static::getSharedInstance('example');
-     *     }
-     *
-     *     return new \CodeIgniter\Example();
-     * }
-     */
-
-     
     public static function authentication(bool $getShared = true)
     {
         if ($getShared) {
@@ -39,5 +29,14 @@ class Services extends BaseService
         }
 
         return new AuthManagers(new AccountModel());
+    }
+
+    public static function users(bool $getShared = true)
+    {
+        if ($getShared) {
+            return static::getSharedInstance('users');
+        }
+
+        return new UserManagers(new AccountModel());
     }
 }
