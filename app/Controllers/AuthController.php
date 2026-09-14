@@ -33,18 +33,32 @@ class AuthController extends BaseController
         $service = service("authentication");
 
         try{
-            if($service->login($data)){
-                return $this->response
-                    ->setStatusCode(200)
-                    ->setJSON([
-                        'message' => 'Login successfull',
-                    ]);
-            } 
+            $session_id = $service->login($data);
+            return $this->response
+                ->setStatusCode(200)
+                ->setJSON([
+                    'message' => 'Login successfull',
+                ])
+                ->setCookie(
+                    'ci_session',
+                    $session_id,
+                    3600,
+                    '',
+                    '/',
+                    '',
+                    false,
+                    true
+                );
+            
+        }catch(UnauthorizedException $e){
+            return $this->response
+                ->setStatusCode($e->getCode())
+                ->setJSON(['message' => $e->getMessage()]);
         }catch(\Throwable $e){
-            throw new InternalServerErrorException();
+            return $this->response
+                ->setStatusCode(500)
+                ->setJSON(['message' => 'Internal server error']);
         }
-        
-        throw new UnauthorizedException('Wrong email or password    ');
     }
 
     public function logout(){

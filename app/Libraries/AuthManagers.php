@@ -3,6 +3,8 @@
 namespace App\Libraries;
 
 use App\DTO\LoginDTO;
+use App\Exceptions\NotFoundException;
+use App\Exceptions\UnauthorizedException;
 use App\Models\AccountModel;
 use App\DTO\RegisterDTO;
 
@@ -21,17 +23,17 @@ class AuthManagers{
         );
     }
     
-    public function login(LoginDTO $data): bool{
+    public function login(LoginDTO $data): string{
         $user = $this->accountModel
             ->where('email', $data->email)
             ->first();
 
         if (!$user) {
-            return false;
+            throw new NotFoundException('User not found');
         }
 
         if (!password_verify($data->password, $user['password'])) {
-            return false;
+            throw new UnauthorizedException("Password invalid");
         }
 
         session()->set([
@@ -40,11 +42,13 @@ class AuthManagers{
             'is_logged_in' => true,
         ]);
 
-        return true;
+        return session()->session_id;
     }
 
     private function hashPassword($password): string{
         return password_hash($password, PASSWORD_DEFAULT);
     }
+
+
 
 }
