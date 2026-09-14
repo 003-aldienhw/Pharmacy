@@ -73,7 +73,12 @@ $routes->get('/dokter/detail-pasien', fn() => view('main', [
     'title' => 'Detail Pasien'
 ]));
 
-$routes->get('/dokter/sudah-diperiksa', fn() => view('main', [
+$routes->get('/dokter/riwayat-pasien', fn() => view('main', [
     'page' => 'pages/doctor/patient_history',
+    'title' => 'Riwayat Pasien'
+]));
+
+$routes->get('/dokter/sudah-diperiksa', fn() => view('main', [
+    'page' => 'pages/doctor/all_patient_history',
     'title' => 'Riwayat semua Pasien'
 ]));

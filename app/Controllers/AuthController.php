@@ -7,7 +7,6 @@ use App\DTO\LoginDTO;
 use App\DTO\RegisterDTO;
 use App\Exceptions\UnauthorizedException;
 use CodeIgniter\HTTP\ResponseInterface;
-use App\Exceptions\InternalServerErrorException;
 
 class AuthController extends BaseController
 {
@@ -24,7 +23,9 @@ class AuthController extends BaseController
                     'message' => 'Account created',
                 ]);
         }catch(\Throwable $e){
-            throw new InternalServerErrorException();
+            return $this->response
+                ->setStatusCode(500)
+                ->setJSON(['message' => 'Internal server error']);
         }
     }
 
@@ -33,21 +34,41 @@ class AuthController extends BaseController
         $service = service("authentication");
 
         try{
-            if($service->login($data)){
-                return $this->response
-                    ->setStatusCode(200)
-                    ->setJSON([
-                        'message' => 'Login successfull',
-                    ]);
-            } 
+            $session_id = $service->login($data);
+            return $this->response
+                ->setStatusCode(200)
+                ->setJSON([
+                    'message' => 'Login successfull',
+                ])
+                ->setCookie(
+                    'ci_session',
+                    $session_id,
+                    3600,
+                    '',
+                    '/',
+                    '',
+                    false,
+                    true
+                );
+            
+        }catch(UnauthorizedException $e){
+            return $this->response
+                ->setStatusCode($e->getCode())
+                ->setJSON(['message' => $e->getMessage()]);
         }catch(\Throwable $e){
-            throw new InternalServerErrorException();
+            return $this->response
+                ->setStatusCode(500)
+                ->setJSON(['message' => 'Internal server error']);
         }
-        
-        throw new UnauthorizedException('Wrong email or password    ');
     }
 
     public function logout(){
+        session()->destroy();
 
+        return $this->response
+            ->deleteCookie('ci_session')
+            ->setJSON([
+                'message' => 'Logout successfull'
+            ]);
     }
 }
