@@ -34,11 +34,11 @@ class AuthManagers{
             return false;
         }
 
-        // session()->set([
-        //     'user_id' => $user['id'],
-        //     'email' => $user['email'],
-        //     'is_logged_in' => true,
-        // ]);
+        session()->set([
+            'user_id' => $user['id'],
+            'email' => $user['email'],
+            'is_logged_in' => true,
+        ]);
 
         return true;
     }
