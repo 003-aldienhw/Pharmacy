@@ -14,19 +14,19 @@
                 <h1 class="w-full text-center text-lg">Jam</h1>
                 <h1 class="w-full text-center text-lg">Status</h1>
             </div>
-            <a href="/dokter/detail-pasien?id=1&status=pending"><div class="flex justify-between font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
+            <a href="/dokter/detail-pasien?id=1&status=in-queue"><div class="flex justify-between items-center font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">01</h1>
                 <h1 class="w-full text-center">Asep</h1>
                 <h1 class="w-full text-center">08.00</h1>
-                <h1 class="w-full text-center">Menunggu</h1>
+                <h1 class="w-full text-center">Sedang Diperiksa</h1>
             </div></a>
-            <a href="/dokter/detail-pasien?id=2&status=pending"><div class="flex justify-between font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
+            <a href="/dokter/detail-pasien?id=2&status=pending"><div class="flex justify-between items-center font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">02</h1>
                 <h1 class="w-full text-center">Udin</h1>
                 <h1 class="w-full text-center">08.00</h1>
                 <h1 class="w-full text-center">Menunggu</h1>
             </div></a>
-            <a href="/dokter/detail-pasien?id=3&status=done"><div class="flex justify-between font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
+            <a href="/dokter/detail-pasien?id=3&status=done"><div class="flex justify-between items-center font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">03</h1>
                 <h1 class="w-full text-center">Toni</h1>
                 <h1 class="w-full text-center">08.00</h1>

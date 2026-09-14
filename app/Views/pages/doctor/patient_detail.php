@@ -44,7 +44,7 @@
 
     $button = "mt-5 p-1 w-30 text-xl rounded-lg ";
 
-    if ($status === 'done') {
+    if ($status === 'done' or $status === 'in-queue') {
         $button .= "text-black bg-gray-500 cursor-not-allowed"; 
         $disabled = "disabled";
     } else {
@@ -58,7 +58,7 @@
         <div class="flex flex-col items-center p-5 bg-[#156082] rounded-lg shadow-xl">
             <h1 class="text-3xl text-center text-shadow-sm text-shadow-white">Detail Pasien</h1>
         </div>
-        <div class="w-25"></div>
+        <a href="/dokter/riwayat-pasien?id=<?=  $selected_id ?>&status=<?=  $status ?>"><button class="p-1 w-25 font-comic font-bold text-md text-white bg-[#156082] cursor-pointer rounded-lg">Riwayat</button></a>
     </div>
     <div class="flex flex-col w-120 items-center p-10 bg-[#156082] rounded-lg shadow-xl">
         <div class="flex flex-col w-full gap-5">
@@ -70,7 +70,7 @@
                 <h1 class="font-comic font-bold"><?php echo $tanggal_lahir ?></h1>
             </div>
             <h1 class="text-2xl">Keluhan</h1>
-                <h1 class="font-comic font-bold"><?php echo $keluhan ?></h1>
+            <h1 class="font-comic font-bold"><?php echo $keluhan ?></h1>
             <div class="flex justify-center">
                 <button class="<?php echo $button ?>" <?= $disabled ?>>Periksa</button>
             </div>
