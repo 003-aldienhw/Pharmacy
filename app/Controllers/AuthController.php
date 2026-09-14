@@ -7,7 +7,6 @@ use App\DTO\LoginDTO;
 use App\DTO\RegisterDTO;
 use App\Exceptions\UnauthorizedException;
 use CodeIgniter\HTTP\ResponseInterface;
-use App\Exceptions\InternalServerErrorException;
 
 class AuthController extends BaseController
 {
@@ -24,7 +23,9 @@ class AuthController extends BaseController
                     'message' => 'Account created',
                 ]);
         }catch(\Throwable $e){
-            throw new InternalServerErrorException();
+            return $this->response
+                ->setStatusCode(500)
+                ->setJSON(['message' => 'Internal server error']);
         }
     }
 
@@ -62,6 +63,12 @@ class AuthController extends BaseController
     }
 
     public function logout(){
+        session()->destroy();
 
+        return $this->response
+            ->deleteCookie('ci_session')
+            ->setJSON([
+                'message' => 'Logout successfull'
+            ]);
     }
 }
