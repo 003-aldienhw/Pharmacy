@@ -83,6 +83,11 @@ $routes->get('/dokter/antrian/pemeriksaan-pasien', fn() => view('main', [
     'title' => 'Pemeriksaan Pasien'
 ]));
 
+$routes->get('/dokter/antrian/pemeriksaan-pasien/obat-resep', fn() => view('main', [
+    'page' => 'pages/doctor/medication',
+    'title' => 'Pemeriksaan Pasien'
+]));
+
 $routes->get('/dokter/antrian/riwayat-pasien', fn() => view('main', [
     'page' => 'pages/doctor/patient_history',
     'title' => 'Riwayat Pasien'
