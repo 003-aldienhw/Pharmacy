@@ -11,6 +11,7 @@
     },
     "require": {
         "php": "^8.2",
+        "cboden/ratchet": "^0.4.4",
         "codeigniter4/framework": "^4.7",
         "codeigniter4/shield": "^1.4"
     },
