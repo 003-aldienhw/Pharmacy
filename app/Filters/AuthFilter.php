@@ -6,7 +6,7 @@ use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class LoginFilter implements FilterInterface
+class AuthFilter implements FilterInterface
 {
     /**
      * Do whatever processing this filter needs to do.
@@ -25,34 +25,14 @@ class LoginFilter implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        $data = json_decode($request->getBody(), true);
-
-        $validation = service('validation');
-
-        $validation->setRules([
-            'email' => [
-                'rules' => 'required|valid_email',
-                'errors' => [
-                    'required' => 'Email required.',
-                    'valid_email' => 'Email is not valid.',
-                ],
-            ],
-
-            'password' => [
-                'rules' => 'required|min_length[8]',
-                'errors' => [
-                    'required' => 'Password required.',
-                    'min_length' => 'Password 8 character minimum.',
-                ],
-            ],
-        ]);
-
-        if (!$validation->run($data)) {
+        $session = session();
+        
+        if($session->get('is_logged_in')){
             return service('response')
+                ->setStatusCode(401)
                 ->setJSON([
-                    'errors' => $validation->getErrors()
-                ])
-                ->setStatusCode(422);
+                    'errors' => 'Unauthorized'
+                ]);
         }
     }
 
