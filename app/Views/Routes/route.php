@@ -97,3 +97,20 @@ $routes->get('/dokter/sudah-diperiksa', fn() => view('main', [
     'page' => 'pages/doctor/all_patient_history',
     'title' => 'Riwayat semua Pasien'
 ]));
+
+/** Pharmacy */
+
+$routes->get('/apotek/dashboard', fn() => view('main', [
+    'page' => 'pages/pharmacy/dashboard',
+    'title' => 'Dashboard Apotek'
+]));
+
+$routes->get('/apotek/resep-masuk', fn() => view('main', [
+    'page' => 'pages/pharmacy/meds_request.php',
+    'title' => 'Resep Masuk'
+]));
+
+$routes->get('/apotek/sedang-diproses', fn() => view('main', [
+    'page' => 'pages/pharmacy/on_process',
+    'title' => 'Sedang Diproses'
+]));
