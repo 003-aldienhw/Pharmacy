@@ -73,12 +73,17 @@ $routes->get('/dokter/antrian', fn() => view('main', [
     'title' => 'Antrian Pasien'
 ]));
 
-$routes->get('/dokter/detail-pasien', fn() => view('main', [
+$routes->get('/dokter/antrian/detail-pasien', fn() => view('main', [
     'page' => 'pages/doctor/patient_detail',
     'title' => 'Detail Pasien'
 ]));
 
-$routes->get('/dokter/riwayat-pasien', fn() => view('main', [
+$routes->get('/dokter/antrian/pemeriksaan-pasien', fn() => view('main', [
+    'page' => 'pages/doctor/examination',
+    'title' => 'Pemeriksaan Pasien'
+]));
+
+$routes->get('/dokter/antrian/riwayat-pasien', fn() => view('main', [
     'page' => 'pages/doctor/patient_history',
     'title' => 'Riwayat Pasien'
 ]));
