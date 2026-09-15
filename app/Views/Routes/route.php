@@ -21,9 +21,14 @@ $routes->get('/poli', fn() => view('main', [
     'title' => 'Pilih Poli'
 ]));
 
-$routes->get('/poli-daftar', fn() => view('main', [
+$routes->get('/poli/poli-daftar', fn() => view('main', [
     'page' => 'pages/patient/register_clinic',
     'title' => 'Daftar Poli'
+]));
+
+$routes->get('/poli/poli-daftar/antrian', fn() => view('main', [
+    'page' => 'pages/patient/queue',
+    'title' => 'Antrian'
 ]));
 
 $routes->get('/profil', fn() => view('main', [
