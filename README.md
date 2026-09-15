@@ -47,6 +47,19 @@ This means that you should configure your web server to "point" to your project'
 not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
 framework are exposed.
 
+```apache
+<VirtualHost *:80>
+    ServerName localhost
+
+    DocumentRoot "path/to/htdocs/public"
+
+    <Directory "path/to/htdocs/public">
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+```
+
 **Please** read the user guide for a better explanation of how CI4 works!
 
 ## Repository Management
