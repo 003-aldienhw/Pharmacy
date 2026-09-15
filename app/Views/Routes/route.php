@@ -21,9 +21,14 @@ $routes->get('/poli', fn() => view('main', [
     'title' => 'Pilih Poli'
 ]));
 
-$routes->get('/poli-daftar', fn() => view('main', [
+$routes->get('/poli/poli-daftar', fn() => view('main', [
     'page' => 'pages/patient/register_clinic',
     'title' => 'Daftar Poli'
+]));
+
+$routes->get('/poli/poli-daftar/antrian', fn() => view('main', [
+    'page' => 'pages/patient/queue',
+    'title' => 'Antrian'
 ]));
 
 $routes->get('/profil', fn() => view('main', [
@@ -68,12 +73,17 @@ $routes->get('/dokter/antrian', fn() => view('main', [
     'title' => 'Antrian Pasien'
 ]));
 
-$routes->get('/dokter/detail-pasien', fn() => view('main', [
+$routes->get('/dokter/antrian/detail-pasien', fn() => view('main', [
     'page' => 'pages/doctor/patient_detail',
     'title' => 'Detail Pasien'
 ]));
 
-$routes->get('/dokter/riwayat-pasien', fn() => view('main', [
+$routes->get('/dokter/antrian/pemeriksaan-pasien', fn() => view('main', [
+    'page' => 'pages/doctor/examination',
+    'title' => 'Pemeriksaan Pasien'
+]));
+
+$routes->get('/dokter/antrian/riwayat-pasien', fn() => view('main', [
     'page' => 'pages/doctor/patient_history',
     'title' => 'Riwayat Pasien'
 ]));

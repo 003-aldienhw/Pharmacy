@@ -13,17 +13,17 @@
                 <h1 class="w-full text-center text-lg">Dokter</h1>
                 <h1 class="w-full text-center text-lg">Jadwal</h1>
             </div>
-            <a href="/poli-daftar?id=1"><div class="flex justify-between font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
+            <a href="/poli/poli-daftar?id=1"><div class="flex justify-between font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">Poli Umum</h1>
                 <h1 class="w-full text-center">Dr. Ahmad</h1>
                 <h1 class="w-full text-center">Senin-Jumat</h1>
             </div></a>
-            <a href="/poli-daftar?id=2"><div class="flex justify-between font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
+            <a href="/poli/poli-daftar?id=2"><div class="flex justify-between font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">Poli Gigi</h1>
                 <h1 class="w-full text-center">Dr. Ucup</h1>
                 <h1 class="w-full text-center">Senin-Kamis</h1>
             </div></a>
-            <a href="/poli-daftar?id=3"><div class="flex justify-between font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
+            <a href="/poli/poli-daftar?id=3"><div class="flex justify-between font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">Poli Anak</h1>
                 <h1 class="w-full text-center">Dr. Asep</h1>
                 <h1 class="w-full text-center">Selasa-Rabu</h1>

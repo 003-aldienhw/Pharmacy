@@ -6,7 +6,8 @@
         <h1 class="text-3xl text-center text-shadow-sm text-shadow-white">Selamat datang, <?php echo $nama ?>!</h1>
     </div>
     <div class="flex flex-col w-120 items-center w-80 p-5 bg-[#156082] rounded-lg shadow-xl">
-        <h1 class="text-2xl text-center">Pilih Tujuanmu</h1>
+        <h1 class="text-2xl text-center">Antrian Mu : 1</h1>
+        <a href="/poli/poli-daftar/antrian?id=1"><button class="mt-5 p-1 w-30 font-comic font-bold text-xl text-white bg-[#011359] cursor-pointer rounded-lg">Lihat</button></a>
     </div>
     <div class="flex flex-col w-120 gap-5">
         <div class="flex justify-between">
