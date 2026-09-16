@@ -6,7 +6,6 @@
     <div class="flex flex-col w-120 p-5 text-3xl bg-[#156082] text-center rounded-lg shadow-xl">
         <h1>Halo <?php echo $nama ?></h1>
         <h1>Mau melakukan apa hari ini?</h1>
-        <!-- <a href="/poli/poli-daftar/antrian?id=1"><button class="mt-5 p-1 w-30 font-comic font-bold text-xl text-white bg-[#011359] cursor-pointer rounded-lg">Lihat</button></a> -->
     </div>
     <div class="flex flex-col w-120 gap-5">
         <div class="flex justify-between">

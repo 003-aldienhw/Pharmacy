@@ -2,8 +2,9 @@
     $nama = "Tono";
     $pasien_menunggu = 100;
     $sudah_diperiksa = 1;
-    $total_pasien = -1;
+    $total_pasien = -100;
 ?>
+<?= view('components/doctor/navbar') ?>
 <div class="flex flex-col gap-10 p-10 justify-center items-center w-full h-screen font-changa bg-[#022e42]">
     <div class="flex flex-col items-center p-5 bg-[#156082] rounded-lg shadow-xl">
         <h1 class="text-3xl text-center text-shadow-sm text-shadow-white">Selamat datang, Dr. <?php echo $nama ?>!</h1>
