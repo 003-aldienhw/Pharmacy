@@ -6,7 +6,8 @@
     $alamat_lengkap = "Jalan buaya nomor 1945, RT 003/RW 002, Kelurahan Sukasaya, Kecamatan kacamata, Jakarta selatan, DKI Jakarta 12750";
     $no_hp = "0812-3456-7890";
 ?>
-<div class="flex flex-col gap-10 p-10 justify-center items-center w-full h-full font-changa bg-[#022e42]">
+<?= view('components/patient/navbar') ?>
+<div class="flex flex-col gap-10 p-10 pt-30 justify-center items-center w-full h-full font-changa bg-[#022e42]">
     <div class="flex w-120 justify-between items-center">
         <a href="/"><button class="p-1 w-25 font-comic font-bold text-md text-white bg-[#156082] cursor-pointer rounded-lg">Kembali</button></a>
         <div class="flex flex-col items-center p-5 bg-[#156082] rounded-lg shadow-xl">
