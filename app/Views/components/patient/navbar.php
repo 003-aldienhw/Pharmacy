@@ -3,6 +3,6 @@
     <div class="flex items-center gap-5 text-lg">
         <a href="/">Beranda</a>
         <a href="/pendaftaran-saya">Riwayat</a>
-        <a href="/profil"><img src="<?= base_url('images/download-removebg-preview.png') ?>" alt="profile icon" width="80"></a>
+        <a href="/profil"><img src="<?= base_url('images/download-removebg-preview.png') ?>" alt="profile icon" width="70"></a>
     </div>
 </nav>

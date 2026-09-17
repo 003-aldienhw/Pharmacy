@@ -42,27 +42,27 @@
     <div class="flex w-220 justify-between items-center">
         <a href="/"><button class="p-1 w-25 font-comic font-bold text-md text-white bg-[#1c80ad] cursor-pointer rounded-lg">Kembali</button></a>
         <div class="flex flex-col items-center p-5 bg-[#1c80ad] rounded-lg shadow-xl">
-            <h1 class="text-3xl text-center text-shadow-sm text-shadow-white">Antrian</h1>
+            <h1 class="text-3xl text-center">Antrian</h1>
         </div>
         <div class="w-25"></div>
     </div>
     <div class="flex flex-col w-220 items-center p-10 bg-[#1c80ad] rounded-lg shadow-xl">
         <div class="flex flex-col w-full gap-5">
             <div class="flex justify-between items-center">
-                <h1 class="text-lg">No RM</h1>
-                <h1 class="font-comic font-bold"><?php echo $rm ?></h1>
+                <h1 class="w-full text-center text-lg">No RM</h1>
+                <h1 class="w-full text-center font-comic font-bold"><?php echo $rm ?></h1>
             </div>
             <div class="flex justify-between items-center">
-                <h1 class="text-lg">Tanggal</h1>
-                <h1 class="font-comic font-bold"><?php echo $tanggal ?></h1>
+                <h1 class="w-full text-center text-lg">Tanggal</h1>
+                <h1 class="w-full text-center font-comic font-bold"><?php echo $tanggal ?></h1>
             </div>
             <div class="flex justify-between items-center">
-                <h1 class="text-lg">Poli</h1>
-                <h1 class="font-comic font-bold"><?php echo $poli ?></h1>
+                <h1 class="w-full text-center text-lg">Poli</h1>
+                <h1 class="w-full text-center font-comic font-bold"><?php echo $poli ?></h1>
             </div>
             <div class="flex justify-between items-center">
-                <h1 class="text-lg">Dokter</h1>
-                <h1 class="font-comic font-bold"><?php echo $dokter ?></h1>
+                <h1 class="w-full text-center text-lg">Dokter</h1>
+                <h1 class="w-full text-center font-comic font-bold"><?php echo $dokter ?></h1>
             </div>
             <h1 class="text-2xl text-center">Status</h1>
             <h1 class="font-comic font-bold text-center">Menunggu Pemeriksaan</h1>

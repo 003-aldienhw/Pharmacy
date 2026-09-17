@@ -57,7 +57,7 @@
     <div class="flex w-220 justify-between items-center">
         <a href="/dokter/antrian"><button class="p-1 w-25 font-comic font-bold text-md text-white bg-[#1c80ad] cursor-pointer rounded-lg">Kembali</button></a>
         <div class="flex flex-col items-center p-5 bg-[#1c80ad] rounded-lg shadow-xl">
-            <h1 class="text-3xl text-center text-shadow-sm text-shadow-white">Detail Pasien</h1>
+            <h1 class="text-3xl text-center">Detail Pasien</h1>
         </div>
         <a href="/dokter/antrian/riwayat-pasien?id=<?=  $selected_id ?>&status=<?=  $status ?>"><button class="p-1 w-25 font-comic font-bold text-md text-white bg-[#1c80ad] cursor-pointer rounded-lg">Riwayat</button></a>
     </div>

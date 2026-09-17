@@ -38,7 +38,7 @@
     <div class="flex w-220 justify-between items-center">
         <a href="/poli"><button class="p-1 w-25 font-comic font-bold text-md text-white bg-[#1c80ad] cursor-pointer rounded-lg">Kembali</button></a>
         <div class="flex flex-col items-center p-5 bg-[#1c80ad] rounded-lg shadow-xl">
-            <h1 class="text-3xl text-center text-shadow-sm text-shadow-white">Daftar Poli</h1>
+            <h1 class="text-3xl text-center">Daftar Poli</h1>
         </div>
         <div class="w-25"></div>
     </div>
@@ -56,9 +56,9 @@
                 <h1 class="w-full text-center text-lg">Jadwal</h1>
                 <h1 class="w-full text-center font-comic font-bold"><?php echo $jadwal ?></h1>
             </div>
-            <div class="flex justify-between items-center">
-                <h1 class="w-full text-center text-lg">Keluhan</h1>
-                <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
+            <h1 class="w-full text-center text-lg">Keluhan</h1>
+            <div class="w-full flex justify-center">
+                <input class="w-80 p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
             </div>
             <div class="flex justify-center">
                 <a href="/poli/poli-daftar/antrian?id=<?= $selected_id ?>"><button class="mt-5 p-1 w-30 text-xl text-white bg-[#032196] cursor-pointer rounded-lg">Daftar</button></a>
