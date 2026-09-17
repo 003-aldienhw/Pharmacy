@@ -9,7 +9,7 @@
         <h1 class="text-3xl">Apotek</h1>
         <h1 class="text-2xl">Total obat yang dikirim : <?php echo $selesai ?></h1>
     </div>
-    <div class="flex flex-col w-150 gap-10">
+    <div class="w-250 flex flex-col gap-10">
         <div class="flex justify-evenly">
             <div class="flex flex-col w-60 h-50 justify-center items-center p-7 bg-[#1c80ad] rounded-lg shadow-xl">
                 <h1 class="text-xl text-center">Resep Masuk</h1>

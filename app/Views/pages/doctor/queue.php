@@ -8,26 +8,26 @@
         <div class="w-25"></div>
     </div>
     <div class="flex flex-col w-220 items-center p-10 bg-[#1c80ad] rounded-lg shadow-xl">
-        <div class="flex flex-col w-full gap-5">
-            <div class="flex justify-between">
+        <div class="flex flex-col w-full">
+            <div class="flex justify-between mb-5">
                 <h1 class="w-full text-center text-lg">No</h1>
                 <h1 class="w-full text-center text-lg">Pasien</h1>
                 <h1 class="w-full text-center text-lg">Jam</h1>
                 <h1 class="w-full text-center text-lg">Status</h1>
             </div>
-            <a href="/dokter/antrian/detail-pasien?id=1&status=in-queue"><div class="flex justify-between items-center font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
+            <a href="/dokter/antrian/detail-pasien?id=1&status=in-queue"><div class="flex justify-between items-center font-comic font-bold h-10 hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">01</h1>
                 <h1 class="w-full text-center">Asep</h1>
                 <h1 class="w-full text-center">08.00</h1>
                 <h1 class="w-full text-center">Sedang Diperiksa</h1>
             </div></a>
-            <a href="/dokter/antrian/detail-pasien?id=2&status=pending"><div class="flex justify-between items-center font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
+            <a href="/dokter/antrian/detail-pasien?id=2&status=pending"><div class="flex justify-between items-center font-comic font-bold h-10 hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">02</h1>
                 <h1 class="w-full text-center">Udin</h1>
                 <h1 class="w-full text-center">08.00</h1>
                 <h1 class="w-full text-center">Menunggu</h1>
             </div></a>
-            <a href="/dokter/antrian/detail-pasien?id=3&status=done"><div class="flex justify-between items-center font-comic font-bold hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
+            <a href="/dokter/antrian/detail-pasien?id=3&status=done"><div class="flex justify-between items-center font-comic font-bold h-10 hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">03</h1>
                 <h1 class="w-full text-center">Toni</h1>
                 <h1 class="w-full text-center">08.00</h1>

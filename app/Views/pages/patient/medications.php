@@ -8,23 +8,23 @@
         <div class="w-25"></div>
     </div>
     <div class="flex flex-col w-220 items-center p-10 bg-[#1c80ad] rounded-lg shadow-xl">
-        <div class="flex flex-col w-full gap-5">
-            <div class="flex justify-between">
+        <div class="flex flex-col w-full">
+            <div class="flex justify-between mb-5">
                 <h1 class="w-full text-center text-lg">Obat dan Resep</h1>
                 <h1 class="w-full text-center text-lg">Status</h1>
             </div>
-            <div class="flex justify-between font-comic font-bold">
+            <a href="/pembayaran"><div class="flex justify-between items-center font-comic font-bold h-10 hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">Paracetamol 100x sehari</h1>
                 <h1 class="w-full text-center">Siap diambil</h1>
-            </div>
-            <div class="flex justify-between font-comic font-bold">
+            </div></a>
+            <a href="/pembayaran"><div class="flex justify-between items-center font-comic font-bold h-10 hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">Paracetamol 100x sehari</h1>
                 <h1 class="w-full text-center">Menunggu disiapkan</h1>
-            </div>
-            <div class="flex justify-between font-comic font-bold">
+            </div></a>
+            <a href="/pembayaran"><div class="flex justify-between items-center font-comic font-bold h-10 hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">Paracetamol 100x sehari</h1>
                 <h1 class="w-full text-center">Sudah Diambil</h1>
-            </div>
+            </div></a>
         </div>
     </div>
 </div>

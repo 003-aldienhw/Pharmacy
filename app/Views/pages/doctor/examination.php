@@ -56,9 +56,8 @@
     </div>
     <div class="flex flex-col w-220 items-center p-10 bg-[#1c80ad] rounded-lg shadow-xl">
         <div class="flex flex-col w-full gap-5">
-            <h1 class="text-2xl">Data Pasien</h1>
             <div class="flex justify-between items-center">
-                <h1 class="text-lg">Tanggal</h1>
+                <h1 class="text-lg">Nama</h1>
                 <h1 class="font-comic font-bold"><?php echo $nama ?></h1>
             </div>
             <div class="flex justify-between items-center">
@@ -69,17 +68,17 @@
                 <h1 class="text-lg">Gender dan Umur</h1>
                 <h1 class="font-comic font-bold"><?php echo $gender_umur ?></h1>
             </div>
-            <h1 class="text-2xl">Keluhan</h1>
+            <h1 class="text-xl">Keluhan</h1>
             <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
-            <h1 class="text-2xl">Riwayat Penyakit</h1>
+            <h1 class="text-xl">Riwayat Penyakit</h1>
             <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
-            <h1 class="text-2xl">Pemeriksaan</h1>
+            <h1 class="text-xl">Pemeriksaan</h1>
             <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
-            <h1 class="text-2xl">Diagnosis</h1>
+            <h1 class="text-xl">Diagnosis</h1>
             <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
-            <h1 class="text-2xl">Tindakan</h1>
+            <h1 class="text-xl">Tindakan</h1>
             <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
-            <h1 class="text-2xl">Catatan Penting</h1>
+            <h1 class="text-xl">Catatan Penting</h1>
             <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
             <div class="flex justify-center">
                 <a href="/dokter/antrian/pemeriksaan-pasien/obat-resep?id=<?= $selected_id ?>&status=<?=  $status ?>"><button class="mt-10 p-1 w-30 text-xl text-white bg-[#032196] cursor-pointer rounded-lg">Selesai</button></a>

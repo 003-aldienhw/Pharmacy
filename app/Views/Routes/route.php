@@ -68,6 +68,11 @@ $routes->get('/dokter/dashboard', fn() => view('main', [
     'title' => 'Dashboard Dokter'
 ]));
 
+$routes->get('/dokter/profil', fn() => view('main', [
+    'page' => 'pages/doctor/profile',
+    'title' => 'Profil Dokter'
+]));
+
 $routes->get('/dokter/antrian', fn() => view('main', [
     'page' => 'pages/doctor/queue',
     'title' => 'Antrian Pasien'
@@ -113,4 +118,4 @@ $routes->get('/apotek/resep-masuk', fn() => view('main', [
 $routes->get('/apotek/sedang-diproses', fn() => view('main', [
     'page' => 'pages/pharmacy/on_process',
     'title' => 'Sedang Diproses'
-]));
+]));    

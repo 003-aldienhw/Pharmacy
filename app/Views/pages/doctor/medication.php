@@ -46,7 +46,7 @@
     }
 ?>
 <?= view('components/doctor/navbar') ?>
-<div class="flex flex-col gap-10 p-10 pt-30 justify-center items-center w-full h-screen font-changa bg-[#c9c9c9]">
+<div class="flex flex-col gap-10 p-10 pt-30 justify-center items-center w-full h-full font-changa bg-[#c9c9c9]">
     <div class="flex w-220 justify-between items-center">
         <a href="/dokter/antrian/pemeriksaan-pasien?id=<?= $selected_id ?>&status=<?=  $status ?>"><button class="p-1 w-25 font-comic font-bold text-md text-white bg-[#1c80ad] cursor-pointer rounded-lg">Kembali</button></a>
         <div class="flex flex-col items-center p-5 bg-[#1c80ad] rounded-lg shadow-xl">
@@ -56,11 +56,11 @@
     </div>
     <div class="flex flex-col w-220 items-center p-10 bg-[#1c80ad] rounded-lg shadow-xl">
         <div class="flex flex-col w-full gap-5">
-            <h1 class="text-2xl">Obat</h1>
+            <h1 class="text-xl">Obat</h1>
             <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
-            <h1 class="text-2xl">Dosis</h1>
+            <h1 class="text-xl">Dosis</h1>
             <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
-            <h1 class="text-2xl">Jumlah</h1>
+            <h1 class="text-xl">Jumlah</h1>
             <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
             <div class="flex justify-center">
                 <a href="/dokter/antrian"><button class="mt-10 p-1 w-30 text-xl text-white bg-[#032196] cursor-pointer rounded-lg">Kirim</button></a>
