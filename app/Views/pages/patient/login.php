@@ -3,8 +3,8 @@
     $inputBaseClasses = "w-70 p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none transition-colors duration-200";
     $inputErrorClasses = "border-red-800 bg-red-10";
 ?>
-<div class="flex justify-center items-center w-full h-screen font-changa bg-[#022e42]">
-    <div class="flex flex-col p-10 bg-[#156082] rounded-lg shadow-xl">
+<div class="flex justify-center items-center w-full h-screen font-changa bg-[#c9c9c9]">
+    <div class="flex flex-col p-10 bg-[#1c80ad] rounded-lg shadow-xl">
         <h1 class="text-3xl text-center">Login Pasien</h1>
         <div class="flex flex-col gap-3 mt-10">
             <h1 class="text-md">NIK / No. RM</h1>
@@ -16,11 +16,11 @@
             <input class="<?php echo $inputBaseClasses ?>" type="text" />
         </div>
         <div class="flex justify-center">
-            <a href="/"><button class="mt-10 p-1 w-30 text-xl text-white bg-[#011359] cursor-pointer rounded-lg">Login</button></a>
+            <a href="/"><button class="mt-10 p-1 w-30 text-xl text-white bg-[#032196] cursor-pointer rounded-lg">Login</button></a>
         </div>
         <div class="flex flex-col mt-5 justify-center items-center">
             <h1>Belum Terdaftar?</h1>
-            <a href="/register" class="text-[#011359]">Daftar</a>
+            <a href="/register" class="text-[#032196]">Daftar</a>
         </div>
     </div>
 </div>

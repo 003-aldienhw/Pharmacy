@@ -258,9 +258,6 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
-  .h-50 {
-    height: calc(var(--spacing) * 50);
-  }
   .h-full {
     height: 100%;
   }
@@ -279,6 +276,9 @@
   .w-55 {
     width: calc(var(--spacing) * 55);
   }
+  .w-60 {
+    width: calc(var(--spacing) * 60);
+  }
   .w-70 {
     width: calc(var(--spacing) * 70);
   }
@@ -288,11 +288,11 @@
   .w-120 {
     width: calc(var(--spacing) * 120);
   }
+  .w-150 {
+    width: calc(var(--spacing) * 150);
+  }
   .w-220 {
     width: calc(var(--spacing) * 220);
-  }
-  .w-320 {
-    width: calc(var(--spacing) * 320);
   }
   .w-full {
     width: 100%;
@@ -320,9 +320,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .justify-evenly {
-    justify-content: space-evenly;
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -356,29 +353,17 @@
   .border-red-800 {
     border-color: var(--color-red-800);
   }
-  .bg-\[\#011c29\] {
-    background-color: #011c29;
-  }
-  .bg-\[\#012b40\] {
-    background-color: #012b40;
+  .bg-\[\#1c80ad\] {
+    background-color: #1c80ad;
   }
   .bg-\[\#022e42\] {
     background-color: #022e42;
   }
-  .bg-\[\#0685bf\] {
-    background-color: #0685bf;
-  }
-  .bg-\[\#01496e\] {
-    background-color: #01496e;
-  }
   .bg-\[\#011359\] {
     background-color: #011359;
   }
-  .bg-\[\#014161\] {
-    background-color: #014161;
-  }
-  .bg-\[\#045980\] {
-    background-color: #045980;
+  .bg-\[\#032196\] {
+    background-color: #032196;
   }
   .bg-\[\#156082\] {
     background-color: #156082;
@@ -389,11 +374,20 @@
   .bg-\[\#bf0606\] {
     background-color: #bf0606;
   }
+  .bg-\[\#c9c9c9\] {
+    background-color: #c9c9c9;
+  }
+  .bg-\[white\] {
+    background-color: white;
+  }
   .bg-gray-300 {
     background-color: var(--color-gray-300);
   }
   .bg-gray-500 {
     background-color: var(--color-gray-500);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .p-1 {
     padding: var(--spacing);
@@ -406,15 +400,6 @@
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
-  }
-  .pt-10 {
-    padding-top: calc(var(--spacing) * 10);
-  }
-  .pt-20 {
-    padding-top: calc(var(--spacing) * 20);
-  }
-  .pt-25 {
-    padding-top: calc(var(--spacing) * 25);
   }
   .pt-30 {
     padding-top: calc(var(--spacing) * 30);
@@ -461,6 +446,15 @@
   }
   .text-\[\#011359\] {
     color: #011359;
+  }
+  .text-\[\#032196\] {
+    color: #032196;
+  }
+  .text-\[\#\] {
+    color: #;
+  }
+  .text-\[\#c9c9c9\] {
+    color: #c9c9c9;
   }
   .text-black {
     color: var(--color-black);

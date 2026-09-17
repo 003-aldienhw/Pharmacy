@@ -7,8 +7,8 @@
     $phoneInputBase = "w-70 p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none transition-colors duration-200";
     $phoneInputError = "border-red-800 bg-red-10";
 ?>
-<div class="flex p-10 justify-center items-center w-full h-full font-changa bg-[#022e42]">
-    <div class="flex flex-col p-10 bg-[#156082] rounded-lg shadow-xl">
+<div class="flex p-10 justify-center items-center w-full h-full font-changa bg-[#c9c9c9]">
+    <div class="flex flex-col p-10 bg-[#1c80ad] rounded-lg shadow-xl">
         <h1 class="text-3xl text-center">Daftar Pasien</h1>
         <div class="flex flex-col gap-3 mt-10">
             <h1 class="text-md">Nama lengkap</h1>
@@ -43,11 +43,11 @@
             <input class="<?php echo $phoneInputBase ?>" type="tel" id="phoneInput" placeholder="0812-3456-7890" inputmode="tel"/>
         </div>
         <div class="flex justify-center">
-            <button class="mt-10 p-1 w-30 text-xl text-white bg-[#011359] cursor-pointer rounded-lg">Submit</button>
+            <button class="mt-10 p-1 w-30 text-xl text-white bg-[#032196] cursor-pointer rounded-lg">Submit</button>
         </div>
         <div class="flex flex-col mt-5 justify-center items-center">
             <h1>Sudah Terdaftar?</h1>
-            <a href="/login" class="text-[#011359]">Login</a>
+            <a href="/login" class="text-[#032196]">Login</a>
         </div>
     </div>
 </div>
