@@ -2,7 +2,7 @@
     $nama = "Budi";
 ?>
 <?= view('components/patient/navbar') ?>
-<div class="flex flex-col gap-10 p-10 pt-30 justify-center items-center w-full h-screen font-changa bg-[#c9c9c9]">
+<div class="flex flex-col gap-10 p-10 pt-30 justify-center items-center w-full min-h-screen font-changa bg-[#c9c9c9]">
     <div class="flex flex-col p-5 gap-5 text-center">
         <h1 class="text-4xl">Halo <?php echo $nama ?> 👋</h1>
         <h1 class="text-2xl">Mau melakukan apa hari ini?</h1>

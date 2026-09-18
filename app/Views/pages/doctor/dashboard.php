@@ -5,7 +5,7 @@
     $total_pasien = -100;
 ?>
 <?= view('components/doctor/navbar') ?>
-<div class="flex flex-col gap-10 p-10 pt-30 justify-center items-center w-full h-screen font-changa bg-[#c9c9c9]">
+<div class="flex flex-col gap-10 p-10 pt-30 justify-center items-center w-full min-h-screen font-changa bg-[#c9c9c9]">
     <div class="flex flex-col p-5 gap-5 text-center">
         <h1 class="text-4xl">Selamat datang, Dr. <?php echo $nama ?></h1>
         <h1 class="text-2xl">Total Pasien yang ditangani : <?php echo $total_pasien ?></h1>
