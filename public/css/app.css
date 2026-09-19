@@ -377,6 +377,9 @@
   .bg-gray-500 {
     background-color: var(--color-gray-500);
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .p-1 {
     padding: var(--spacing);
   }

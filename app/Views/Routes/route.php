@@ -36,6 +36,11 @@ $routes->get('/profil', fn() => view('main', [
     'title' => 'Profil'
 ]));
 
+$routes->get('/profil/edit', fn() => view('main', [
+    'page' => 'pages/patient/edit_profile',
+    'title' => 'Edit Profil'
+]));
+
 $routes->get('/obat', fn() => view('main', [
     'page' => 'pages/patient/medications',
     'title' => 'Resep dan Obat'
