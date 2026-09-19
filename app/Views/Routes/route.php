@@ -78,6 +78,11 @@ $routes->get('/dokter/profil', fn() => view('main', [
     'title' => 'Profil Dokter'
 ]));
 
+$routes->get('/dokter/profil/edit', fn() => view('main', [
+    'page' => 'pages/doctor/edit_profile',
+    'title' => 'Edit Profil Dokter'
+]));
+
 $routes->get('/dokter/antrian', fn() => view('main', [
     'page' => 'pages/doctor/queue',
     'title' => 'Antrian Pasien'

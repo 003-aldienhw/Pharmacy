@@ -21,27 +21,27 @@
     <div class="flex flex-col w-220 items-center p-10 bg-[#1c80ad] rounded-lg shadow-xl">
         <div class="flex w-full justify-between items-center mb-5">
             <h1 class="w-full text-2xl text-left">Informasi saya</h1>
-            <button class="p-1 w-25 font-comic font-bold text-md text-white bg-[#032196] cursor-pointer rounded-lg">Edit</button>
+            <a href="/dokter/profil/edit"><button class="p-1 w-25 font-comic font-bold text-md text-white bg-[#032196] cursor-pointer rounded-lg">Edit</button></a>
         </div>
         <div class="flex flex-col w-full gap-3">
             <h1 class="text-lg text-left">Nama Lengkap</h1>
-            <div class="w-full p-1 bg-gray-300 outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $nama ?></div>
+            <div class="w-full p-1 bg-white outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $nama ?></div>
             <h1 class="text-lg text-left">NIK</h1>
-            <div class="w-full p-1 bg-gray-300 outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $nik ?></div>
+            <div class="w-full p-1 bg-white outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $nik ?></div>
             <h1 class="text-lg text-left">Tanggal Lahir</h1>
-            <div class="w-full p-1 bg-gray-300 outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $tanggal_lahir ?></div>
+            <div class="w-full p-1 bg-white outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $tanggal_lahir ?></div>
             <h1 class="text-lg text-left">Jenis Kelamin</h1>
-            <div class="w-full p-1 bg-gray-300 outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $jenis_kelamin ?></div>
+            <div class="w-full p-1 bg-white outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $jenis_kelamin ?></div>
             <h1 class="text-lg text-left">Alamat Lengkap</h1>
-            <div class="w-full p-1 bg-gray-300 outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $alamat_lengkap ?></div>
+            <div class="w-full p-1 bg-white outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $alamat_lengkap ?></div>
             <h1 class="text-lg text-left">SIP</h1>
-            <div class="w-full p-1 bg-gray-300 outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $sip ?></div>
+            <div class="w-full p-1 bg-white outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $sip ?></div>
             <h1 class="text-lg text-left">Spesialis</h1>
-            <div class="w-full p-1 bg-gray-300 outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $spesialis ?></div>
+            <div class="w-full p-1 bg-white outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $spesialis ?></div>
             <h1 class="text-lg text-left">Poli</h1>
-            <div class="w-full p-1 bg-gray-300 outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $poli ?></div>
+            <div class="w-full p-1 bg-white outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $poli ?></div>
             <h1 class="text-lg text-left">Nomor HP</h1>
-            <div class="w-full p-1 bg-gray-300 outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $no_hp ?></div>
+            <div class="w-full p-1 bg-white outline-none border-2 border-black font-comic font-bold rounded-lg"><?php echo $no_hp ?></div>
         </div>
         
 </div>
