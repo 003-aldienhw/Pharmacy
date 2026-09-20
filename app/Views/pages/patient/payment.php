@@ -30,7 +30,7 @@
                 <h1 class="w-full text-center font-comic font-bold">Belum dibayar</h1>
             </div>
             <div class="flex justify-center">
-                <button class="mt-5 p-1 w-30 text-xl text-white bg-[#032196] cursor-pointer rounded-lg">Bayar</button>
+                <a href="/obat"><button class="mt-5 p-1 w-30 text-xl text-white bg-[#032196] cursor-pointer rounded-lg">Bayar</button></a>
             </div>
         </div>
     </div>
