@@ -15,19 +15,19 @@
                 <h1 class="w-full text-center text-lg">Tanggal</h1>
                 <h1 class="w-full text-center text-lg">Status</h1>
             </div>
-            <a href="/pembayaran"><div class="flex justify-between items-center font-comic font-bold h-10 hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
+            <a href="/pembayaran?id=1&status=pending"><div class="flex justify-between items-center font-comic font-bold h-10 hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">Dr. Asep</h1>
                 <h1 class="w-full text-center">Paracetamol 100x sehari</h1>
                 <h1 class="w-full text-center">17 Agustus 1945</h1>
                 <h1 class="w-full text-center">Siap diambil</h1>
             </div></a>
-            <a href="/pembayaran"><div class="flex justify-between items-center font-comic font-bold h-10 hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
+            <a href="/pembayaran?id=2&status=in-queue"><div class="flex justify-between items-center font-comic font-bold h-10 hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">Dr. Ucok</h1>
                 <h1 class="w-full text-center">Obat Tidur 100x sehari</h1>
                 <h1 class="w-full text-center">17 Agustus 1745</h1>
                 <h1 class="w-full text-center">Menunggu disiapkan</h1>
             </div></a>
-            <a href="/pembayaran"><div class="flex justify-between items-center font-comic font-bold h-10 hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
+            <a href="/pembayaran?id=3&status=done"><div class="flex justify-between items-center font-comic font-bold h-10 hover:bg-white transition-all duration-200 rounded-sm cursor-pointer">
                 <h1 class="w-full text-center">Dr. Ucup</h1>
                 <h1 class="w-full text-center">Racun Sianida 100x sehari</h1>
                 <h1 class="w-full text-center">17 Agustus 1899</h1>
