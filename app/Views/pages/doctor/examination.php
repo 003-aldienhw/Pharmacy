@@ -69,17 +69,17 @@
                 <h1 class="font-comic font-bold"><?php echo $gender_umur ?></h1>
             </div>
             <h1 class="text-xl">Keluhan</h1>
-            <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
+            <textarea class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none"></textarea>
             <h1 class="text-xl">Riwayat Penyakit</h1>
-            <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
+            <textarea class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none"></textarea>
             <h1 class="text-xl">Pemeriksaan</h1>
-            <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
+            <textarea class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none"></textarea>
             <h1 class="text-xl">Diagnosis</h1>
-            <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
+            <textarea class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none"></textarea>
             <h1 class="text-xl">Tindakan</h1>
-            <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
+            <textarea class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none"></textarea>
             <h1 class="text-xl">Catatan Penting</h1>
-            <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
+            <textarea class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none"></textarea>
             <div class="flex justify-center">
                 <a href="/dokter/antrian/pemeriksaan-pasien/obat-resep?id=<?= $selected_id ?>&status=<?=  $status ?>"><button class="mt-10 p-1 w-30 text-xl text-white bg-[#032196] cursor-pointer rounded-lg">Selesai</button></a>
             </div>

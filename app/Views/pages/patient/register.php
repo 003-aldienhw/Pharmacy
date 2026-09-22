@@ -43,7 +43,7 @@
             <input class="<?php echo $phoneInputBase ?>" type="tel" id="phoneInput" placeholder="0812-3456-7890" inputmode="tel"/>
         </div>
         <div class="flex justify-center">
-            <button class="mt-10 p-1 w-30 text-xl text-white bg-[#032196] cursor-pointer rounded-lg">Submit</button>
+            <a href="/"><button class="mt-10 p-1 w-30 text-xl text-white bg-[#032196] cursor-pointer rounded-lg">Submit</button></a>
         </div>
         <div class="flex flex-col mt-5 justify-center items-center">
             <h1>Sudah Terdaftar?</h1>
