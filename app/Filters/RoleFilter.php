@@ -25,7 +25,7 @@ class RoleFilter implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        $session = session();
+        
 
     }
 

@@ -17,7 +17,7 @@ class AuthController extends BaseController
         try{
             $service->register($data);
 
-            return $this->response
+          return $this->response
                 ->setStatusCode(201)
                 ->setJSON([
                     'message' => 'Account created',
