@@ -10,6 +10,8 @@ class UserManagers{
     ){}
 
     public function adduserprofile(UserProfileDTO $userData){
-        
+        $id = session()->get('user_id');
+
+        $this->accountModel->update($id, ['data' => $userData->toArray()]);
     }
 }
