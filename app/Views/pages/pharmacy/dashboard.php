@@ -6,7 +6,6 @@
 <?= view('components/pharmacy/navbar') ?>
 <div class="flex flex-col gap-10 p-10 pt-30 justify-center items-center w-full min-h-screen font-changa bg-[#c9c9c9]">
     <div class="flex flex-col p-5 gap-5 text-center">
-        <h1 class="text-3xl">Apotek</h1>
         <h1 class="text-2xl">Total obat yang dikirim : <?php echo $selesai ?></h1>
     </div>
     <div class="w-250 flex flex-col gap-10">
