@@ -125,6 +125,11 @@ $routes->get('/apotek/resep-masuk', fn() => view('main', [
     'title' => 'Resep Masuk'
 ]));
 
+$routes->get('/apotek/resep', fn() => view('main', [
+    'page' => 'pages/pharmacy/handle_meds_request',
+    'title' => 'Resep'
+]));
+
 $routes->get('/apotek/sedang-diproses', fn() => view('main', [
     'page' => 'pages/pharmacy/on_process',
     'title' => 'Sedang Diproses'
