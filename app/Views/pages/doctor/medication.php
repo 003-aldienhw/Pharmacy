@@ -17,6 +17,11 @@
         ],
     ];
 
+    $meds = [
+        "PARA" => "Paracetamol",
+        "AMO" => "Amoixicillin"
+    ];
+
     if (isset($_GET['id'])) {
         $selected_id = (int)$_GET['id'];
 
@@ -57,10 +62,17 @@
     <div class="flex flex-col w-220 items-center p-10 bg-[#1c80ad] rounded-lg shadow-xl">
         <div class="flex flex-col w-full gap-5">
             <h1 class="text-xl">Obat</h1>
-            <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
-            <h1 class="text-xl">Dosis</h1>
-            <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
+            <select name="meds" id="meds" class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
+                <option value="">--Pilih Obat--</option>
+                <?php foreach ($meds as $code => $name): ?>
+                    <option value="<?php echo htmlspecialchars($code); ?>">
+                        <?php echo htmlspecialchars($name); ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
             <h1 class="text-xl">Jumlah</h1>
+            <input type="number" class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
+            <h1 class="text-xl">Aturan Pakai</h1>
             <input class="w-full p-1 bg-gray-300 font-comic font-bold rounded-lg border-2 border-black outline-none">
             <div class="flex justify-center">
                 <a href="/dokter/antrian"><button class="mt-10 p-1 w-30 text-xl text-white bg-[#032196] cursor-pointer rounded-lg">Kirim</button></a>
