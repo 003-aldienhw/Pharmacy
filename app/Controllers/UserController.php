@@ -3,22 +3,20 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\DTO\DoctorProfileDTO;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class DoctorController extends BaseController
+class UserController extends BaseController
 {
-    public function adddoctorprofile(){
-        $data = DoctorProfileDTO::fromArray($this->request->GetJSON(true));
+    public function getuserprofile(){
         $service = service("users");
 
         try{
-            $service->adduserprofile($data);
+            $data = $service->getuserprofile();
 
             return $this->response
-                ->setStatusCode(201)
                 ->setJSON([
-                    'message' => 'User profile created',
+                    'message' => 'Success to get user data',
+                    'data' => $data
             ]);
         }catch(\Throwable $e){
             return $this->response

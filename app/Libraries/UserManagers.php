@@ -1,6 +1,7 @@
 <?php
 namespace App\Libraries;
 
+use App\DTO\DoctorProfileDTO;
 use App\DTO\UserProfileDTO;
 use App\Models\AccountModel;
 
@@ -13,5 +14,17 @@ class UserManagers{
         $id = session()->get('user_id');
 
         $this->accountModel->update($id, ['data' => $userData->toArray()]);
+    }
+
+    public function adddoctroprofile(DoctorProfileDTO $userData){
+        $id = session()->get('user_id');
+
+        $this->accountModel->update($id, [$userData->toArray()]);
+    }
+
+    public function getuserprofile(){
+        $id = session()->get('user_id');
+    
+        $this->accountModel->select("data")->find($id);
     }
 }

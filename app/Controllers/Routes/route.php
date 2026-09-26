@@ -12,7 +12,15 @@ $routes->group('api',function ($routes){
 
     $routes->group('patient', function($routes){
         $routes->post('adduserprofile', 'PatientController::adduserprofile', ['filter' => 'auth']);
+        });
+    
+    $routes->group('doctor', function($routes){
+        $routes->post('adddoctorprofile', 'DoctorController::adddoctorprofile', ['filter' => 'auth']);
     });
 
+    $routes->group('user', function($routes){
+        $routes->get('getuserprofile', 'UserController::getuserprofile', ['filter' => 'auth' ]);
+    });
+        
     service('auth')->routes($routes);
 });
