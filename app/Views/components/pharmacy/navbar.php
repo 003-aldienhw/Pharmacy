@@ -2,6 +2,6 @@
     <h1 class="text-4xl text-center">Apotek</h1>
     <div class="flex items-center gap-5 text-lg">
         <a href="/apotek/dashboard">Beranda</a>
-        <a href="">Stok Obat</a>
+        <a href="/apotek/stok-obat">Stok Obat</a>
     </div>
 </nav>

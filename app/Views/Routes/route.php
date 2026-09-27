@@ -130,6 +130,11 @@ $routes->get('/apotek/resep', fn() => view('main', [
     'title' => 'Resep'
 ]));
 
+$routes->get('/apotek/stok-obat', fn() => view('main', [
+    'page' => 'pages/pharmacy/meds_stock',
+    'title' => 'Stok Obat'
+]));
+
 $routes->get('/apotek/sedang-diproses', fn() => view('main', [
     'page' => 'pages/pharmacy/on_process',
     'title' => 'Sedang Diproses'
