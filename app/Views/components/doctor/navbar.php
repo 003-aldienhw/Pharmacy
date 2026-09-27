@@ -1,5 +1,8 @@
 <nav class="fixed flex w-full p-10 justify-between items-center h-20 font-changa text-white bg-[#1c80ad] shadow-xl z-1000">
-    <h1 class="text-4xl text-center">Klinik</h1>
+    <div class="flex items-end gap-0.5">
+        <h1 class="text-4xl text-center">Klinik</h1>
+        <h2 class="text-2xl text-center text-[#032196]">Dokter</h2>
+    </div>
     <div class="flex items-center gap-5 text-lg">
         <a href="/dokter/dashboard">Beranda</a>
         <a href="/dokter/sudah-diperiksa">Riwayat</a>

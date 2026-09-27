@@ -138,4 +138,21 @@ $routes->get('/apotek/stok-obat', fn() => view('main', [
 $routes->get('/apotek/sedang-diproses', fn() => view('main', [
     'page' => 'pages/pharmacy/on_process',
     'title' => 'Sedang Diproses'
-]));    
+]));
+
+/** Cashier */
+
+$routes->get('/kasir/dashboard', fn() => view('main', [
+    'page' => 'pages/cashier/dashboard',
+    'title' => 'Dashboard Kasir'
+]));
+
+$routes->get('/kasir/transaksi', fn() => view('main', [
+    'page' => 'pages/cashier/transaction',
+    'title' => 'Transaksi'
+]));
+
+$routes->get('/kasir/riwayat-transaksi', fn() => view('main', [
+    'page' => 'pages/cashier/transaction_history',
+    'title' => 'Riwayat Transaksi'
+]));
