@@ -8,6 +8,31 @@
         <div class="w-25"></div>
     </div>
     <div class="flex flex-col w-220 items-center p-10 bg-[#1c80ad] rounded-lg shadow-xl">
-        
+        <div class="flex flex-col w-full gap-5">
+            <div class="flex justify-between">
+                <h1 class="w-full text-center text-lg">Pasien</h1>
+                <h1 class="w-full text-center text-lg">Dokter</h1>
+                <h1 class="w-full text-center text-lg">Tanggal</h1>
+                <h1 class="w-full text-center text-lg">Total</h1>
+            </div>
+            <div class="flex justify-between font-comic font-bold">
+                <h1 class="w-full text-center">Asep</h1>
+                <h1 class="w-full text-center">Dr. Ahmad</h1>
+                <h1 class="w-full text-center">02 September 2026</h1>
+                <h1 class="w-full text-center">5jt</h1>
+            </div>
+            <div class="flex justify-between font-comic font-bold">
+                <h1 class="w-full text-center">Udin</h1>
+                <h1 class="w-full text-center">Dr. Ucup</h1>
+                <h1 class="w-full text-center">04 September 2026</h1>
+                <h1 class="w-full text-center">1m</h1>
+            </div>
+            <div class="flex justify-between font-comic font-bold">
+                <h1 class="w-full text-center">Tono</h1>
+                <h1 class="w-full text-center">Dr. Asep</h1>
+                <h1 class="w-full text-center">17 Agustus 1945</h1>
+                <h1 class="w-full text-center">9t</h1>
+            </div>
+        </div>
     </div>
 </div>
