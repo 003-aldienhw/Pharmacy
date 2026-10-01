@@ -147,9 +147,19 @@ $routes->get('/kasir/dashboard', fn() => view('main', [
     'title' => 'Dashboard Kasir'
 ]));
 
+$routes->get('/kasir/detail-transaksi', fn() => view('main', [
+    'page' => 'pages/cashier/transaction_detail',
+    'title' => 'Detail Transaksi'
+]));
+
 $routes->get('/kasir/transaksi', fn() => view('main', [
-    'page' => 'pages/cashier/transaction',
+    'page' => 'pages/cashier/transactions',
     'title' => 'Transaksi'
+]));
+
+$routes->get('/kasir/edit-transaksi', fn() => view('main', [
+    'page' => 'pages/cashier/edit_transaction',
+    'title' => 'Edit Transaksi'
 ]));
 
 $routes->get('/kasir/riwayat-transaksi', fn() => view('main', [
